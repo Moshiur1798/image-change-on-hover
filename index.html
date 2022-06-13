@@ -8,16 +8,18 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
-<body>                      
+<body>   
+  
+  <div class="container">
+    <ul>
+      <li><a href="#" rel="p1">Marine Construction</a></li>
+      <li><a href="#" rel="p2">Offshore Construction</a></li>
+      <li><a href="#" rel="p3">Pipe Fabrication</a></li>
+      <li><a href="#" rel="p4">Onshore Construction</a></li>
+    </ul>
+    <div id="pic"></div> 
+  </div>
 					
-<ul>
-   <li><a href="#" rel="p1">Marine Construction</a></li>
-   <li><a href="#" rel="p2">Offshore Construction</a></li>
-   <li><a href="#" rel="p3">Pipe Fabrication</a></li>
-   <li><a href="#" rel="p4">Onshore Construction</a></li>
-</ul>
-
-<div id="pic"></div> 
   <script>
     $("ul a").hover(function() {
   $("#pic").removeClass().addClass($(this).attr('rel'));

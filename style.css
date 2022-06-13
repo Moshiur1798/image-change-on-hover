@@ -1,20 +1,41 @@
 #pic{
   width: 120px;
   height: 120px;
-  border: 1px solid rgb(150, 150, 150);
+  /* border: 1px solid rgb(150, 150, 150); */
   margin-right: 20px;
+  object-fit: contain;
   float:left;
 }
 #pic.p1 {
-  background-image: url("images/1");
+  background-image: url("images/1.png");
   background-size: cover;
 }
 #pic.p2 {
   background-image: url("images/2.png");
+  background-size: cover;
 }
 #pic.p3 {
   background-image: url("images/3.png");
+  background-size: cover;
 }
 #pic.p4 {
   background-image: url("images/4.png");
+  background-size: cover;
+}
+
+.container{
+  display: flex;
+  align-items: flex-start;
+}
+
+.container ul li{
+  list-style: none;
+  padding: 5px 0;
+  margin-right: 20px;
+  color: #333;
+}
+
+.container ul li a{
+text-decoration: none;
+color: #333;
 }
